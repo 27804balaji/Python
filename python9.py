@@ -4,57 +4,82 @@ class student_details:
         self.reg_no = input("Enter your Regno :")
         self.college = input('Enter the Colege :')
 
-class student(student_details):
+class Student(student_details):
     def access(self):
-        print('\n')
-        print('Name :',self.name)
-                
-        if self.reg_no[2:5] == 'BAM' or 'bam' or 'Bam':
-            print('Code :' , self.reg_no[2:5])
+        print('\nName:', self.name)
+
+        if self.reg_no[2:5].upper() == 'BAM':
+            print('Code:', self.reg_no[2:5])
             self.department = 'AIML'
-            self.course = 'Artificial INtelligence & Machine Leanring'
-            print('Reg.No :',self.reg_no)
-            print('Department :' , self.department)
-            print('Course Name :' , self.course)
+            print('Department :', self.department)
+            self.course = 'Artificial Intelligence & Machine Learning'
+            print('Course Name :', self.course)
 
-        elif self.reg_no[2:5] == 'BDA' or 'bda' or 'Bda':
-            print('Code :' , self.reg_no[2:5])
+        elif self.reg_no[2:5].upper() == 'BDA':
+            print('Code:', self.reg_no[2:5])
             self.department = 'DSA'
+            print('Department :', self.department)
             self.course = 'Data Science & Analytics'
-            print('Reg.No :',self.reg_no)
-            print('Department :' , self.department)
-            print('Course Name :' , self.course)
+            print('Course Name :', self.course)
 
-        elif self.reg_no[2:5] == 'BFS' or 'bfs' or 'Bfs':
-            print('Code :' , self.reg_no[2:5])
+        elif self.reg_no[2:5].upper() == 'BFS':
+            print('Code:', self.reg_no[2:5])
             self.department = 'BCFS'
+            print('Department :', self.department)
             self.course = 'Cyber Security & Forensics Science'
-            print('Reg.No :',self.reg_no)
-            print('Department :' , self.department)
-            print('Course Name :' , self.course )
+            print('Course Name :', self.course)
 
         
-        if self.department == 'AIML' or 'Aiml' or 'aiml':
-            self.branch = 'Computer Science'
-            print('Branch :' , self.branch)
+        elif self.reg_no[2:5].upper() == 'BCS':
+            print('Code:', self.reg_no[2:5])
+            self.department = 'BCS'
+            print('Department :', self.department)
+            self.course = 'Computer Science'
+            print('Course Name :', self.course)
 
-        elif self.department == 'DSA':
-            self.branch = 'Computer Science'
-            print('Branch :' , self.branch)
+        
+        elif self.reg_no[2:5].upper() == 'BCA':
+            print('Code:', self.reg_no[2:5])
+            self.department = 'BCA'
+            print('Department :', self.department)
+            self.course = 'Computer Application'
+            print('Course Name :', self.course)
 
-        elif self.department == 'BCFS':
+
+
+        if self.department.upper() == 'AIML':
             self.branch = 'Computer Science'
-            print('Branch :' , self.branch)
+            print('Branch :', self.branch)
+
+        elif self.department.upper() == 'DSA':
+            self.branch = 'Computer Science'
+            print('Branch :', self.branch)
+
+        elif self.department.upper() == 'BCFS':
+            self.branch = 'Computer Science'
+            print('Branch :', self.branch)
+
+        elif self.department.upper() == 'BCA':
+            self.branch = 'Computer Science'
+            print('Branch :', self.branch)
+
+        elif self.department.upper() == 'BCS':
+            self.branch = 'Computer Science'
+            print('Branch :', self.branch)
+
 
 
         if self.branch == 'Computer Science':
-            self.director = 'Tom Curise'
-            print('Director :' , self.director)
+            self.director = 'Tom Cruise'
+            print('Director :', self.director)
 
-        if self.college == 'STC' or 'stc':
+
+
+        if self.college.upper() == 'STC':
             self.university = 'Bharathiyar University'
-            print('College :' , self.college)
-            print('University :',self.university)
+            print('College:', self.college)
+            print('University:', self.university)
 
-std = student()
+
+std = Student()
 std.access()
