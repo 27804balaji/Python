@@ -1,0 +1,18 @@
+class and syntax:
+
+class name:
+    function():
+        # Code
+
+class name1(name):
+    function():
+        #Code
+
+object = name1
+name1.function()
+
+
+
+To access the private varibale in the derived class syntax
+    1.  ._classname__private_variable (or)
+    2.  ._classname__private_method
