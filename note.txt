@@ -16,3 +16,11 @@ name1.function()
 To access the private varibale in the derived class syntax
     1.  ._classname__private_variable (or)
     2.  ._classname__private_method
+
+Generators :
+            It is used to create our own iterator function that returns traversal object with a sequence of value. 
+            In a Generators , yeild function is used instead of return. 
+            The return terminates the entire statement where as yield statement pause the statement.
+            The next() function is used to retrieve the element from the generator object.
+            syntax:
+                next(gen_obj)
