@@ -11,8 +11,6 @@ class name1(name):
 object = name1
 name1.function()
 
-
-
 To access the private varibale in the derived class syntax
     1.  ._classname__private_variable (or)
     2.  ._classname__private_method
@@ -44,3 +42,16 @@ Set Comprehension:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Regualar Expression:
                 A Regualar Expression is a sequence of pattern that defines the search pattern.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Decorators:
+        Decorators allows the programmer to modify the behaviour of the function or class.
+        It allows the programmer to define a function inside the another function.
+        It allows the programmer to wrap the function in order to extend the behaviour of the wrapped function without permanently modifying it.
+
+        This include:
+            1.Logging
+            2.enforcing access control and authentication
+            3.instrumentation and timming function
+            4.caching and etc.
+
+
